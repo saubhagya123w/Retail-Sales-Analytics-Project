@@ -69,7 +69,7 @@ This project simulates how analysts help business leaders **diagnose problems** 
 
 ---
 
-## 🧑‍💼 Why Recruiters Should Care (Impact & Relevance)  
+## 🧑‍💼Impact & Relevance  
 This project highlights:  
 - ✅ **Business Impact Orientation** → Clear mapping of analysis to real-world decisions (CFO/Operations).  
 - ✅ **Technical Proficiency** → Strong use of SQL, Power BI, DAX, and ETL workflows.  
