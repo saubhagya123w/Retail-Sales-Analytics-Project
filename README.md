@@ -1,168 +1,158 @@
-🛒 Retail Profitability Optimization — End-to-End Data & Analytics Project
-📌 Project Overview
+🛒 Retail Profitability Optimization
 
-This project showcases an end-to-end data analytics and machine learning workflow, simulating a real-world consulting engagement in the retail domain. The objective is to solve profit leakage (₹3.8M), optimize slow-moving inventory, and assess expansion ROI (₹5M).
+📊 End-to-End Data Analytics & Machine Learning Project
 
-It demonstrates expertise in:
+🌟 Project Overview
 
-Business Problem Definition & Consulting Approach
+This project simulates a real-world consulting engagement for a retail company.
+The goal: identify profit leakage (₹3.8M), optimize slow-moving inventory, and evaluate expansion ROI (₹5M).
 
-SQL + Python ETL Pipelines
+✅ Covers the complete data & analytics lifecycle:
+Business Understanding → Data Acquisition → Data Cleaning → EDA → Predictive Modeling → Dashboard Development
 
-Data Cleaning & Feature Engineering for BI & ML
-
-Exploratory Data Analysis (EDA) with Business Storytelling
-
-Predictive Modeling (Forecasting, Classification, Elasticity, Segmentation)
-
-Interactive BI Dashboards (Power BI / Tableau)
-
-🔑 Resume Value: Strong portfolio project proving Data Analyst, Business Analyst, and Decision Analytics skills with SQL, Python, Power BI, and ML modeling.
+📌 Resume/GitHub Value:
+Showcases consulting-style problem solving, SQL-Python ETL, advanced feature engineering, ML modeling, and BI dashboard storytelling → perfect for Data Analyst, Business Analyst, and Decision Analytics roles.
 
 📂 Repository Structure
-├── /docs/
+├── /docs/                  → Business requirement documents
 │   └── Business_Requirements.pdf
-├── /sql/
+├── /sql/                   → SQL scripts (staging, cleaning, schema)
 │   ├── staging_load.sql
 │   ├── canonicalize.sql
 │   └── star_schema.sql
-├── /scripts/
+├── /scripts/               → Python ETL scripts
 │   └── load_staging.py
-├── /notebooks/
+├── /notebooks/             → Jupyter notebooks for EDA & ML
 │   ├── 01_eda.ipynb
 │   ├── 02_forecasting.ipynb
 │   ├── 03_classification_shap.ipynb
 │   ├── 04_elasticity.ipynb
 │   ├── 05_segmentation.ipynb
 │   └── 03_feature_engineering.ipynb
-├── /pbix/
+├── /pbix/                  → Power BI dashboard
 │   └── retail_profit_dashboard.pbix
-├── /images/
+├── /images/                → Dashboard screenshots
 │   └── dashboard_screenshots.png
 └── README.md
 
 🚀 Workflow Phases
-Phase 1 — Business Understanding & Problem Definition
+📌 Phase 1 — Business Understanding & Problem Definition
 
-Dataset Role: Context from business documents (PDF), not direct.
+Tasks: Stakeholder mapping (CFO, Ops, Merchandising, Expansion), profit leakage analysis.
 
-Tasks: Stakeholder mapping (CFO, Ops Head, Merchandising, Expansion), problem framing.
+KPIs:
 
-KPIs: Gross Margin %, Profit Leakage (₹3.8M), Working Capital Freed (₹1.2M), Expansion ROI (₹5M).
+Gross Margin %
 
-Deliverable: /docs/Business_Requirements.pdf.
+Profit Leakage → ₹3.8M
 
-✅ Resume/GitHub Value: Consulting-style business problem definition & KPI mapping.
+Working Capital Freed → ₹1.2M
 
-Phase 2 — Data Acquisition & Storage
+Expansion ROI → ₹5M
 
-Dataset: Kaggle Sample Sales Data.
+Deliverable: /docs/Business_Requirements.pdf
 
-Tasks: Load into SQL staging, validate schema, handle missing values, error logging.
+✅ Value: Demonstrates consulting-style problem framing.
 
-Tools: PostgreSQL / MySQL, Python (pandas, sqlalchemy).
+📌 Phase 2 — Data Acquisition & Storage
 
-Deliverables: /sql/staging_load.sql, /scripts/load_staging.py.
+Dataset: Kaggle Sample Sales Data
 
-✅ Resume/GitHub Value: SQL + Python ETL pipeline (data ingestion, staging, validation).
+Tasks: Load into SQL staging, schema validation, missing value handling.
 
-Phase 3 — Data Cleaning & Feature Engineering
+Tools: PostgreSQL / MySQL, Python (pandas, sqlalchemy)
 
-Tasks: Handle nulls, datatype fixes, standardize strings/dates.
+Deliverables: /sql/staging_load.sql, /scripts/load_staging.py
+
+✅ Value: SQL + Python ETL pipeline for structured ingestion.
+
+📌 Phase 3 — Data Cleaning & Feature Engineering
+
+Tasks: Handle nulls, datatype fixes, string/date standardization.
 
 Derived Features: cost_each, profit, discount_pct, inventory_age_days, is_profitable.
 
 Schema: fact_sales, dim_product, dim_customer.
 
-Tools: SQL (CTEs, window functions), Python (pandas).
+Deliverables: /sql/canonicalize.sql, /sql/star_schema.sql, /notebooks/03_feature_engineering.ipynb
 
-Deliverables: /sql/canonicalize.sql, /sql/star_schema.sql, /notebooks/03_feature_engineering.ipynb.
+✅ Value: Shows BI star schema + advanced feature engineering.
 
-✅ Resume/GitHub Value: BI star schema, advanced feature engineering, analytics-ready dataset.
+📌 Phase 4 — Exploratory Data Analysis (EDA)
 
-Phase 4 — Exploratory Data Analysis (EDA)
+Insights:
 
-Tasks: Summary stats, time trends, Pareto analysis (80/20 SKUs), discount vs profit, territory-level insights.
+Time-trend analysis 📈
 
-Tools: Python (pandas, matplotlib, seaborn, plotly).
+Pareto (80/20 SKUs) 📊
 
-Deliverables: /notebooks/01_eda.ipynb, Insight Summary Table.
+Discount vs Profit correlation 💸
 
-✅ Resume/GitHub Value: Data storytelling with visualization & business insights.
+Territory & inventory comparisons 🌍
 
-Phase 5 — Predictive Modeling
+Tools: Python (pandas, matplotlib, seaborn, plotly)
 
-Models:
+Deliverable: /notebooks/01_eda.ipynb
 
-Forecasting → Prophet / ARIMA
+✅ Value: Business storytelling with data visualization.
 
-Classification → RandomForest / XGBoost + SHAP
+📌 Phase 5 — Predictive Modeling
 
-Elasticity → ElasticNet regression
+Models & Use Cases:
 
-Segmentation → K-Means clustering
+🔮 Forecasting → Prophet / ARIMA
 
-Metrics: MAPE, RMSE, ROC-AUC, Precision@K.
+🎯 Classification → RandomForest / XGBoost + SHAP explainability
 
-Tools: scikit-learn, LightGBM, Prophet, SHAP, KMeans.
+💡 Elasticity → ElasticNet regression
 
-Deliverables:
+👥 Segmentation → K-Means clustering
 
-/notebooks/02_forecasting.ipynb
+Metrics: MAPE, RMSE, ROC-AUC, Precision@K
 
-/notebooks/03_classification_shap.ipynb
+Deliverables: Notebooks (02_forecasting.ipynb … 05_segmentation.ipynb)
 
-/notebooks/04_elasticity.ipynb
+✅ Value: Demonstrates applied ML for forecasting, segmentation, ROI optimization.
 
-/notebooks/05_segmentation.ipynb
+📌 Phase 6 — Dashboard Development
 
-✅ Resume/GitHub Value: Applied ML for forecasting, customer segmentation, churn prediction, and ROI optimization.
-
-Phase 6 — Dashboard Development
-
-Tasks: Build Power BI dashboard with executive, operations, expansion, and drill-down pages.
+Dashboard Pages: Executive overview, operations, expansion, drill-down analysis.
 
 KPIs: Gross Margin %, MoM Growth, Top-N Contribution.
 
 Tools: Power BI / Tableau.
 
-Deliverables: /pbix/retail_profit_dashboard.pbix, /images/dashboard_screenshots.png.
+Deliverables: /pbix/retail_profit_dashboard.pbix, /images/dashboard_screenshots.png
 
-✅ Resume/GitHub Value: BI storytelling with executive-ready dashboards & KPI tracking.
+✅ Value: Executive-ready BI dashboard with stakeholder-focused KPIs.
 
 🛠️ Tools & Technologies
 Category	Tools & Libraries
-ETL & Data Storage	SQL (PostgreSQL, MySQL), Python (pandas, sqlalchemy)
+ETL & Storage	PostgreSQL, MySQL, Python (pandas, sqlalchemy)
 Data Cleaning	SQL (CTEs, Window Functions), pandas
-EDA & Visualization	matplotlib, seaborn, plotly
+EDA & Viz	matplotlib, seaborn, plotly
 Machine Learning	scikit-learn, LightGBM, Prophet, SHAP, KMeans
-Dashboarding	Power BI, Tableau
-Consulting Docs	Markdown, PDF
+BI & Dashboards	Power BI, Tableau
+Docs & Reporting	Markdown, PDF
 ⚙️ How to Run This Project
 
-Clone Repository
-
-git clone https://github.com/yourusername/retail-profitability-analytics.git
-cd retail-profitability-analytics
-
-
-Setup Environment
+Install Dependencies
 
 pip install -r requirements.txt
 
 
 Run SQL Scripts
 
-Execute /sql/staging_load.sql and /sql/star_schema.sql in PostgreSQL/MySQL.
+Execute /sql/staging_load.sql & /sql/star_schema.sql in PostgreSQL/MySQL.
 
-Run ETL Script
+Load Data via ETL Script
 
 python scripts/load_staging.py
 
 
-Explore Notebooks
+Run Jupyter Notebooks
 
-Run EDA and ML notebooks (/notebooks/).
+Open /notebooks/ and execute EDA + ML notebooks sequentially.
 
 View Dashboard
 
